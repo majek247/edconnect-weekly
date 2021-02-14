@@ -1,45 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width"= device-width">
-    </head>
-    <body>
-        <header>
-            <h1>Project Explorer</h1>
-            <h2>One Stop Database For Academic Projects</h2>
-        </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="search.html">Projects</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-            <a href="createproject.html">Submit</a>
-        </nav>
-        <main>
-            <section>
-                <h4>Project 1</h4>
-                <a href="editproject.html">Edit Project</a>
-                <ul>
-                    <li>Created By: Jane Doe</li>
-                    <li>Date Created: 00/00/0000</li>
-                    <li>Last Updated: 01/01/2019</li>
-                </ul>
-            </section>
-            <section>
-                <h4>Project Abstract</h4>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
-                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                      Tortor dignissim convallis aenean et tortor</div>
-            </section>
-            <section>
-                <h4>Project Details</h4>
-                <ul>
-                    <li>Authors: John Doe, Jane Doe</li>
-                    <li>Tags: #Asphyxia, #GSW</li>
-                    <li>Project Files: <a href="search.html">File 1,</a> <a href="profile.html">File 2.</a></li>
-                </ul>
-            </section>
-        </main>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width"=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">Project Explorer</a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Submit</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Signup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+        </ul>
+
+    </nav>
+    <main>
+        <section>
+            <div class="container pt-3">
+                <h2>Project 1</h2>
+                <div class="p-3 mb-2 bg-light">
+                    <div class="row">
+                        <div class="col-md-3">
+                            Created by <br> Ade Chris
+                        </div>
+                        <div class="col-md-3">
+                            Date Created <br>2020/08/30
+                        </div>
+                        <div class="col-md-3">
+                            Last Updated <br> 2020/08/30
+                        </div>
+                        <div class="col-md-3 d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary">Edit Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>Project Abstract</h4> <br>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+                            Tortor dignissim convallis aenean et tortor</div> <br>
+                        <h5>Comments</h5>
+                        <div class="form-group">
+                            <textarea rows="3" name="abstract" placeholder="Leave a comment" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary"></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>Project Details</h4>
+                        <div class="card">
+                            <div class="card-header">
+                                Author(s)
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Ade Chris</p>
+                            </div>
+                        </div> <br>
+                        <div class="card">
+                            <div class="card-header">
+                                Project Files
+                            </div>
+                            <div class="card-body">
+                                <p style="text-align:center" class="card-text">No file uploaded yet</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+  
+    </main>
+    <footer class="container">
+        <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
+    </footer>
+</body>
+
 </html>

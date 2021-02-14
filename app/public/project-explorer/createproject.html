@@ -1,30 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width"= device-width">
-    </head>
-    <body>
-        <header>
-            <h1>Project Explorer</h1>
-            <h2>One Stop Database For Academic Projects</h2>
-        </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="search.html">Projects</a>
-            <a href="login.html">Login</a>
-            <a href="register.html">Register</a>
-            <a href="createproject.html">Submit</a>
-        </nav>
-        <main>
-            <h2>Submit Project</h2>
-            <form name="submitProject">
-                <div>Project Name: <br> <input type="text" name="name"></div> <br>
-                <div>Project Abstract: <br> <textarea name="abstract"></textarea></div> <br>
-                <div>Authors: <br> <input type="text" name="authors"></div> <br>
-                <div>Tag(s): <br> <input type="text" name="tags"></div> <br>
-                <input type="submit">
-               </form>
-        </main>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width"=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#">Project Explorer</a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Submit</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Signup</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+        </ul>
+
+    </nav>
+    <main>
+        <div class="container pt-3">
+            <div class="form-row">
+                <div class="w-75 mx-auto">
+                    <h3>Submit Project</h3>
+                    <div class="form-group">
+                        <label for="projectName">Project Name</label>
+                        <input type="text" class="form-control" placeholder="Enter project name">
+                    </div>
+                    <div class="form-group">
+                        <label for="projectAbstract">Project Abstract</label>
+                        <textarea rows="6" name="abstract" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="authors">Authors</label>
+                        <input type="text" class="form-control" placeholder="Enter author names (seperated by comma)">
+                    </div>
+                    <div class="form-group">
+                        <label for="projectName">Tag(s)</label>
+                        <input type="tags" class="form-control"
+                            placeholder="Use # to tag project with different projects">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary">Continue</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </main>
+    <footer class="container">
+        <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
+    </footer>
+</body>
+
 </html>
