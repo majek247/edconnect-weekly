@@ -8,7 +8,30 @@
 
 </head>
 <style>
+    a{
+      color: white;
+    }
 
+    .container{
+      max-width: 1440px;
+    }
+
+    main{
+      width: 84%;
+      margin: 3rem 3rem 0 3rem;
+    }
+
+    .searchInput{
+      width: 60%;
+    }
+
+    .searchBy{
+      background-color: rgba(133, 133, 133, 0.103);
+    }
+
+    footer{
+      padding: 2rem 9rem 4rem;
+    }
 </style>
 
 <body>
@@ -33,78 +56,81 @@
         </ul>
 
     </nav>
-    <main>
+    <main class="mx-auto">
         <section>
-            <div class="container pt-3">
-                <h2>Project Gallery</h2>
-                <form name="searchForm">
-                <div class="p-3 mb-2 bg-light text-white">
-                    <div class="form-row">
-                        <div class="form-group col-md-7">
-                            <input type="text" name="searchTerm" 
-                            class="form-control form-control-lg" 
-                                placeholder="Search project name, authors, abstract, tags">
-                        </div>
-                        <div class="form-group col-md-1.5">
-                            <h6 class="form-control form-control-lg">Search by</h6>
-                        </div>
-                        <div class="form-group col-md-1.5">
-                            <select name="searchType" class="form-control form-control-lg">
-                                <option value="Name">Name</option>
-                                <option value="Abstract">Abstract</option>
-                                <option value="Authors">Authors</option>
-                                <option value="Tags">Tags</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-1.5">
-                            <input type="submit" value="Search" class="btn btn-primary btn-lg"></button>
-                        </div>
-                        </form>
-                    </div>
-                </div>
-               
-            </div>
+          <h4>Project Gallery</h4>
+          
+          <div class="bg-light p-3">
+            <form name="searchForm" class="form-row">
+              
+              <input type="text" name="searchTerm" class="form-control form-control-lg searchInput" placeholder="Search project name, authors, abstract, tags">
+              
+              <div class="form-group form-row">         
+                  <label for="searchBy" class="form-label form-control-lg searchBy">Search By:</label>
+                  <div>
+                    <select name="searchType" id="searchBy" class="form-control form-control-lg">
+                      <option value="Name">Name</option>
+                      <option value="Abstract">Abstract</option>
+                      <option value="Authors">Authors</option>
+                      <option value="Tags">Tags</option>
+                    </select>   
+                  </div>
+                   
+              </div>
+    
+              <div>
+                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+              </div>
+              
+            </form>
+          </div>
+          
         </section>
+  
+        
         <section>
-            <div class="container">
-                <h2>All Projects</h2>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Project Title</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">Author1, Author2</h6>
-                                <p class="card-text">Some quick example text<br>to build on the card title
-                                    <br>and make up the bulk of the card's content
-                                </p>
-                                <a href="#" class="card-link">html</a>
-                                <a href="#" class="card-link">css</a>
-                                <a href="#" class="card-link">javascript</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Project Title</h4>
-                                <h6 class="card-subtitle mb-2 text-muted">Author1, Author2</h6>
-                                <p class="card-text">Some quick example text<br>to build on the card title
-                                    <br>and make up the bulk of the card's content
-                                </p>
-                                <a href="#" class="card-link">html</a>
-                                <a href="#" class="card-link">css</a>
-                                <a href="#" class="card-link">javascript</a>
-                            </div>
-                        </div>
-                    </div>
-
+          <h5 class="mt-4 mb-3">All Projects <small class="text-muted">(0 results)</small></h5>
+  
+          <div class="row mx-0">
+            <div class="col-md-3 px-0 mr-md-2 mt-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Project title</h5>
+                  <h6 class="card-subtitle text-muted mb-2">Author 1, Author 2</h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                  <div class="row mx-0 text-primary">
+                    <p class="mr-3">#html</p>
+                    <p class="mr-3">#css</p>
+                    <p class="">#javascript</p>
+                  </div>
                 </div>
-
-
-
+                
+              </div>
             </div>
+  
+            <div class="col-md-3 px-0 mt-2">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title text-primary">Project title</h5>
+                  <h6 class="card-subtitle text-muted mb-2">Author 1, Author 2</h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                  <div class="row mx-0 text-primary">
+                    <p class="mr-3">#html</p>
+                    <p class="mr-3">#css</p>
+                    <p class="">#javascript</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          
+          </div>
+          
+          
+          
         </section>
-    </main>
+      
+      </main>
     <footer class="container">
         <p class="float-right"> Project Explorer&copy;2020 -<strong>Edconnect</strong></p>
     </footer>
